@@ -45,7 +45,6 @@ keys.addEventListener('click', (event) => {
         if (!displayedNum.includes('.')) {
             display.textContent = displayedNum + '.';
         }
-        // If an operator was pressed, start a new number with '0.'
         if (calculatorState.waitingForSecondOperand) {
             display.textContent = '0.';
             calculatorState.waitingForSecondOperand = false;
